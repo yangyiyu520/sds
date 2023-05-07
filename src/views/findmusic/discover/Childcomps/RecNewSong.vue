@@ -47,6 +47,7 @@ export default {
           getSongUrl(song.id).then((res) => {
             this.songurl = res.data.data[0].url;
             this.$store.dispatch("saveSongUrl", this.songurl);
+            this.$store.dispatch("changePlayState", true);
           });
           /* 根据歌曲id获取每首歌的信息*/
           getEverySongDetail(song.id).then((res) => {

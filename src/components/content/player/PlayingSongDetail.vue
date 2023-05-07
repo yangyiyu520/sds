@@ -190,11 +190,9 @@ export default {
       this.closeSongDetail();
     },
     pausePlay() {
-      this.$store.dispatch("changePlayState", false);
       document.querySelector("#audio").pause();
     },
     startPlay() {
-      this.$store.dispatch("changePlayState", true);
       document.querySelector("#audio").play();
     },
   },

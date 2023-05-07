@@ -50,31 +50,6 @@
         </el-submenu>
       </el-menu>
     </div>
-
-    <!-- 主路由导航 -->
-    <el-menu router :default-active="defaultActive">
-      <!-- <el-menu-item v-for="(item, index) in subnavitem" :key="index" :index="item.path">
-        <span class="iconfont" :class="item.icon"></span>
-        <span>{{ item.name }}</span>
-      </el-menu-item>
-
-      <div class="mycreat" v-if="userSongList.length >= 1">
-        <p class="by">我创建的歌单</p>
-        <el-menu-item v-for="item in createdSongList" :key="item.id" :index="'/songlistdetail/' + item.id">
-          <span class="iconfont icon-xihuan"></span>
-          <span>{{ item.name }}</span>
-        </el-menu-item>
-      </div>
-      <div class="collect" v-if="userSongList.length > 1">
-        <p class="by">我收藏的歌单</p>
-        <div class="person">
-          <el-menu-item v-for="item in collectSongList" :key="item.id" :index="'/songlistdetail/' + item.id">
-            <span class="iconfont icon-gedan"></span>
-            <span>{{ item.name }}</span>
-          </el-menu-item>
-        </div>
-      </div> -->
-    </el-menu>
   </div>
 </template>
 <script>

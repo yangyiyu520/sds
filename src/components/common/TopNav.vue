@@ -26,7 +26,6 @@ export default {
 <style lang="less" scoped>
 .top-nav {
   display: flex;
-  width: 100%;
   justify-content: center;
 }
 .el-menu {
@@ -37,10 +36,14 @@ export default {
   height: 45px;
   line-height: 45px;
   font-size: 16px;
+  background-color: #fafafa;
 }
 .el-menu--horizontal > .el-menu-item.is-active {
   border-bottom: 3px solid var(--mycompColor);
   font-size: 18px;
   color: var(--mycompColor);
+}
+.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover {
+  background-color: #fafafa;
 }
 </style>

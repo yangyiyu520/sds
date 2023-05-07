@@ -22,7 +22,7 @@
           <template v-slot="scope">
             <span
               class="iconfont"
-              :class="isPlaying ? ' icon-voice' : 'icon-jingyin_laba'"
+              :class="isPlaying ? ' icon-bofang' : 'icon-stop'"
               v-if="scope.row.id == nowSongDetail.id"
             ></span>
             <span v-else>{{ scope.row.index | formatIndex }}</span>
@@ -165,6 +165,7 @@ export default {
             this.$store.dispatch("saveSongUrl", res.data.data[0].url);
           });
           // 更新播放状态
+          this.$store.dispatch("changePlayState", true);
           //提交vuex保存当前歌曲详情
           this.$store.dispatch("saveSongDetail", this.getSongInfo(song));
           // 提交vuex添加到播放列表
@@ -225,8 +226,8 @@ export default {
   }
 }
 
-.icon-voice,
-.icon-jingyin_laba {
+.icon-bofang,
+.icon-stop {
   color: var(--themeColor);
 }
 .icon-mv {

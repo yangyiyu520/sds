@@ -7,17 +7,17 @@ export function getSearchHotWord(){
 }
 // 获取搜索内容
 // type  1: 单曲, 10: 专辑, 100: 歌手, 1000: 歌单, 1002: 用户, 1004: MV, 1006: 歌词, 1009: 电台, 1014: 视频, 1018:综合
-export function getSearcDetail(keywords,type,offset,limit=30){
-    return request({
-        url:'/cloudsearch',
-        params:{
-            keywords,
-            type,
-            offset,
-            limit
-        }
-    })
-}
+// export function getSearcDetail(keywords,type,offset,limit=30){
+//     return request({
+//         url:'/cloudsearch',
+//         params:{
+//             keywords,
+//             type,
+//             offset,
+//             limit
+//         }
+//     })
+// }
 // 获取搜索结果最佳匹配
 export function getGoodMatch(keywords){
     return request({

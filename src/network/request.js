@@ -13,9 +13,10 @@ export function request(config) {
 	});
 
 	// 请求拦截
+	const aLoadingWhiteList=["/login/qr/check","/login/qr/create","/login/qr/key"]
 	instance.interceptors.request.use(
 		config => {
-			if (config.url != "/login/qr/check") {
+			if (aLoadingWhiteList.indexOf(config.url) ===-1) {
 				startLoading();
 			}
 			return config;

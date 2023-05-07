@@ -43,9 +43,9 @@
           <div class="like-song" @click="likeNowSongBy">
             <span :class="islike ? 'iconfont icon-xihuan2' : 'iconfont icon-xihuan'"></span>
           </div>
-          <div class="download" @click="downloadCurrentMusic" title="下载">
+          <!-- <div class="download" @click="downloadCurrentMusic" title="下载">
             <span class="iconfont icon-xiazai"></span>
-          </div>
+          </div> -->
         </div>
         <!-- 没有音乐时 -->
         <div class="cover-content" v-if="Object.keys(nowSongDetail).length == 0" @click="showSongDetail">
@@ -494,20 +494,26 @@ export default {
         this.totalTime = "00:00";
       }
     },
+    isPlaying() {
+      if (this.isPlaying) this.$refs.audioplay.play();
+    },
   },
 };
 </script>
 
 <style lang="less" scoped>
 #footer {
-  width: 100%;
+  width: 90%;
   position: fixed;
   bottom: 0px;
   height: 70px;
+  margin-left: 70px;
+  border-radius: 35px;
   z-index: 999;
-  background: #f8f8ff;
-  border-top: 1px solid #dddddd;
+  background-color: pink;
+  border: 1px solid #dddddd;
 }
+
 .player {
   display: flex;
   align-items: center;
@@ -523,7 +529,8 @@ export default {
       align-items: center;
       .cover {
         position: relative;
-        width: 60px;
+        width: 40px;
+        height: 40px;
 
         img {
           width: 100%;
@@ -591,11 +598,10 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #fff;
-        background: var(--themeRgba);
+        color: var(--themeColor);
         border-radius: 50%;
         &:hover {
-          background: var(--themeColor);
+          // background: var(--themeColor);
         }
       }
       .change-box {

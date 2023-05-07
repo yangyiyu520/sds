@@ -2,14 +2,10 @@
   <div id="header">
     <!-- 标题logo -->
     <div class="title">
-      <div class="icon"><span class="iconfont icon-yinleyanzou"></span></div>
-      <div class="text"><span>BlueMusic</span></div>
+      <!-- <div class="icon"><span class="iconfont icon-yinleyanzou"></span></div>
+      <div class="text"><span>BlueMusic</span></div> -->
     </div>
-    <!-- 操作 -->
-    <div class="operation">
-      <span class="iconfont icon-shangyiye" @click="goBack"></span>
-      <span class="iconfont icon-xiayiye" @click="goForward"></span>
-    </div>
+
     <!-- 搜索框 -->
     <div class="search">
       <Searchinput />
@@ -19,17 +15,17 @@
       <Login />
     </div>
     <!-- 主题 -->
-    <div class="pifu">
+    <!-- <div class="pifu">
       <el-popover ref="popover" placement="bottom" width="150" trigger="click">
         <span class="iconfont icon-pifu" slot="reference"></span>
         <ThemePicker />
       </el-popover>
-    </div>
+    </div> -->
     <!-- 全屏按钮 -->
-    <div class="full">
+    <!-- <div class="full">
       <span class="iconfont icon-quanping" @click="full" v-if="!isFull" title="全屏"></span>
       <span class="iconfont icon-cancel-full-screen" @click="exitFull" v-if="isFull" title="退出全屏"></span>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -41,50 +37,45 @@ import { requestFullScreen, exitFullscreen, isFullscreen } from "common/utils.js
 export default {
   name: "Header",
   components: { Searchinput, Login, ThemePicker },
-  data() {
-    return {
-      isFull: false,
-    };
-  },
-  methods: {
-    goBack() {
-      this.$router.go(-1);
-    },
-    goForward() {
-      this.$router.go(1);
-    },
-    full() {
-      requestFullScreen();
-      this.isFull = true;
-    },
-    exitFull() {
-      exitFullscreen();
-      this.isFull = false;
-    },
-  },
-  mounted() {
-    window.onresize = () => {
-      if (!isFullscreen()) {
-        this.isFull = false;
-      }
-    };
-    document.addEventListener("keyup", (e) => {
-      //f11全屏
-      if (e.code == 122) {
-        this.isFull = !this.isFull;
-      }
-    });
-  },
+  // data() {
+  //   return {
+  //     isFull: false,
+  //   };
+  // },
+  // methods: {
+  //   full() {
+  //     requestFullScreen();
+  //     this.isFull = true;
+  //   },
+  //   exitFull() {
+  //     exitFullscreen();
+  //     this.isFull = false;
+  //   },
+  // },
+  // mounted() {
+  //   window.onresize = () => {
+  //     if (!isFullscreen()) {
+  //       this.isFull = false;
+  //     }
+  //   };
+  //   document.addEventListener("keyup", (e) => {
+  //     //f11全屏
+  //     if (e.code == 122) {
+  //       this.isFull = !this.isFull;
+  //     }
+  //   });
+  // },
 };
 </script>
 <style lang="less" scoped>
 #header {
   position: relative;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 60px;
-  background: var(--mycompColor);
+  background: pink;
   z-index: 99;
   .title {
     flex: 2;
@@ -110,26 +101,10 @@ export default {
       line-height: 60px;
     }
   }
-  .operation {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 30px;
-    color: #fff;
-    span {
-      display: block;
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      // background: rgba(100, 149, 237, 1);
-      background: rgba(105, 105, 105, 0.1);
-      border-radius: 50%;
-      cursor: pointer;
-    }
-  }
+
   .search {
     flex: 2;
+    margin-left: 240px;
   }
   .right-login {
     display: flex;
@@ -137,15 +112,15 @@ export default {
     align-content: center;
     flex: 12;
   }
-  .pifu {
-    padding-right: 15px;
-    color: #fff;
-    cursor: pointer;
-  }
-  .full {
-    padding-right: 20px;
-    color: #fff;
-    cursor: pointer;
-  }
+  // .pifu {
+  //   padding-right: 15px;
+  //   color: #fff;
+  //   cursor: pointer;
+  // }
+  // .full {
+  //   padding-right: 20px;
+  //   color: #fff;
+  //   cursor: pointer;
+  // }
 }
 </style>

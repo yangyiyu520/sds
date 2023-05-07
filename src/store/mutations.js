@@ -46,7 +46,11 @@ const mutations = {
 
 	// 保存歌曲url
 	saveSongUrl(state, payload) {
-		state.songUrl = payload;
+		if(state.songUrl===payload){
+		}else{
+			state.songUrl = payload;
+		}
+		
 	},
 
 	// 保存当前播放歌曲详情,并且添加当前播放歌曲到播放历史记录
