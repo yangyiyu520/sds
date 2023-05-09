@@ -5,7 +5,6 @@
       <audio
         id="audio"
         autoplay
-        controls
         :src="songUrl"
         ref="audioplay"
         @play="changeState(true)"
