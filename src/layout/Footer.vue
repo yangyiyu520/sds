@@ -567,7 +567,7 @@ export default {
         }
         .icon-xihuan2 {
           font-size: 18px;
-          color: var(--themeColor);
+          color: #ff5940;
         }
       }
       .download {

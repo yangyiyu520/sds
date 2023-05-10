@@ -109,6 +109,7 @@ export default {
   padding-top: 2px;
   .el-menu {
     border-right: 0;
+    background-color: #fafafa;
   }
   .el-submenu {
     margin-left: -19px;
