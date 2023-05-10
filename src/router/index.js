@@ -57,13 +57,12 @@ const routes = [
 	/* 1 发现音乐 */
 	{
 		path: "/",
-		redirect: "/findmusic",
+		redirect: "/findmusic/discover",
 	},
 	{
 		path: "/findmusic",
 		component: Findmusic,
 		name: "Findmusic",
-		redirect: "/findmusic/discover",
 		children: [
 			{
 				path: "discover",
