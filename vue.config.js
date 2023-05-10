@@ -11,6 +11,12 @@ module.exports = {
 			},
 		},
 	},
+	pluginOptions: {
+		electronBuilder: {
+			customFileProtocol: "./"
+		}
+	}
+	
 	// devServer: {
 	// 	proxy: {
 	// 		"/api": {
