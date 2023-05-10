@@ -11,12 +11,8 @@ module.exports = {
 			},
 		},
 	},
-	publicPath:"./",
-	assetsDir:"./",
-	pluginOptions: {
-		electronBuilder: {
-			customFileProtocol: "./"
-		}
+	transpileDependencies: true,
+	publicPath: './'
 	}
 	
 	// devServer: {
