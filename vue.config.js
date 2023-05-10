@@ -13,7 +13,7 @@ module.exports = {
 	},
 	transpileDependencies: true,
 	publicPath: '../../'
-	}
+	
 	
 	// devServer: {
 	// 	proxy: {
