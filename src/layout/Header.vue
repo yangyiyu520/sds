@@ -4,7 +4,6 @@
     <div class="title">
       <!-- <div class="icon"><span class="iconfont icon-yinleyanzou"></span></div>
       <div class="text"><span>BlueMusic</span></div> -->
-      <h1>铭猪音乐</h1>
     </div>
 
     <!-- 搜索框 -->
