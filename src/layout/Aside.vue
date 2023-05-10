@@ -19,7 +19,7 @@
         <el-submenu index="1">
           <template slot="title">
             <div style="margin-left: 16px;">
-              <span class="el-icon-menu iconfont" style="margin-top: 10px;"></span>
+              <span class="icon-shouye iconfont" style="margin-top: 10px;"></span>
               <span>我的音乐</span>
             </div>
           </template>
