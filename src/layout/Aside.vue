@@ -175,7 +175,6 @@ export default {
     &.is-active {
       font-weight: 400;
       background-color: #fff;
-      box-shadow: 0 20px 27px rgb(0 0 0 / 5%);
       color: #409eff;
 
       .iconfont {
