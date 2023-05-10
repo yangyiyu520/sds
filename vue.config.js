@@ -11,7 +11,12 @@ module.exports = {
 			},
 		},
 	},
-	publicPath: './'
+	pluginOptions: {
+		electronBuilder: {
+			customFileProtocol: "./"
+		}
+	}
+	
 	
 	
 	// devServer: {
