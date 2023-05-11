@@ -148,6 +148,12 @@ export default {
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .search-input {
+    width: 60vw;
+    margin-left: -190px;
+  }
+}
 .list {
   width: 350px;
   height: 450px;

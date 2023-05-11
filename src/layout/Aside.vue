@@ -188,4 +188,9 @@ export default {
     }
   }
 }
+@media screen and (max-width: 600px) {
+  #aside {
+    display: none;
+  }
+}
 </style>

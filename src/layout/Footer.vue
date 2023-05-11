@@ -512,7 +512,12 @@ export default {
   background-color: pink;
   border: 1px solid #dddddd;
 }
-
+@media screen and (max-width: 500px) {
+  #footer {
+    width: 98vw;
+    margin-left: 0;
+  }
+}
 .player {
   display: flex;
   align-items: center;
@@ -628,11 +633,17 @@ export default {
       align-items: center;
       justify-content: center;
       height: 70px;
+
       span {
         padding: 0 10px;
       }
       .s-progress {
         width: 100%;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .song-progress {
+        display: none;
       }
     }
     .playmodel {
@@ -656,6 +667,19 @@ export default {
       .icon-cibiaoquanyi {
         font-weight: 700;
       }
+    }
+    @media screen and (max-width: 500px) {
+      .playmodel {
+        margin-left: 100px;
+        .icon-cibiaoquanyi {
+          display: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .cneter-play-song {
+      margin-left: 120px;
     }
   }
   // 右侧声音控制
@@ -682,6 +706,11 @@ export default {
       &:hover {
         color: var(--themeColor);
       }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .right-voice {
+      display: none;
     }
   }
   span {
