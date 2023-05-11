@@ -512,7 +512,7 @@ export default {
   background-color: pink;
   border: 1px solid #dddddd;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   #footer {
     width: 98vw;
     margin-left: 0;
