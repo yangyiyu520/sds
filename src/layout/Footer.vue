@@ -641,7 +641,7 @@ export default {
         width: 100%;
       }
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       .song-progress {
         display: none;
       }
@@ -668,7 +668,7 @@ export default {
         font-weight: 700;
       }
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       .playmodel {
         margin-left: 100px;
         .icon-cibiaoquanyi {
@@ -677,7 +677,7 @@ export default {
       }
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     .cneter-play-song {
       margin-left: 120px;
     }
@@ -708,9 +708,16 @@ export default {
       }
     }
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     .right-voice {
-      display: none;
+      .icon-laba,
+      .icon-jingyin,
+      .v-progress {
+        display: none;
+      }
+      .icon-songplaylist {
+        margin-right: 141px;
+      }
     }
   }
   span {
