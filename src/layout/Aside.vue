@@ -60,7 +60,7 @@ export default {
     return {
       subnavitem: [
         { name: "发现音乐", path: "/findmusic", icon: "icon-yinyueclick" },
-        // { name: "推荐视频", path: "/recvideo", icon: "icon-shipin1" },
+        { name: "推荐视频", path: "/recvideo", icon: "icon-shipin1" },
         { name: "推荐音乐", path: "/receveryday", icon: "icon-dianzan" },
         { name: "我的收藏", path: "/myfavorite", icon: "icon-myfavorite" },
       ],
