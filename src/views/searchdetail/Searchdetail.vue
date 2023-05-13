@@ -37,10 +37,10 @@ export default {
           name: "歌手",
           path: "/searchdetail/singerres/" + this.$route.params.keywords,
         },
-        // {
-        // 	name: "歌单",
-        // 	path: "/searchdetail/songlistres/" + this.$route.params.keywords,
-        // },
+        {
+          name: "歌单",
+          path: "/searchdetail/songlistres/" + this.$route.params.keywords,
+        },
         // {
         // 	name: "MV",
         // 	path: "/searchdetail/mvres/" + this.$route.params.keywords,
