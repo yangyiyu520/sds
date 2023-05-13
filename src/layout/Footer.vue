@@ -42,9 +42,9 @@
           <div class="like-song" @click="likeNowSongBy">
             <span :class="islike ? 'iconfont icon-xihuan2' : 'iconfont icon-xihuan'"></span>
           </div>
-          <!-- <div class="download" @click="downloadCurrentMusic" title="下载">
+          <div class="download" @click="downloadCurrentMusic" title="下载">
             <span class="iconfont icon-xiazai"></span>
-          </div> -->
+          </div>
         </div>
         <!-- 没有音乐时 -->
         <div class="cover-content" v-if="Object.keys(nowSongDetail).length == 0" @click="showSongDetail">
