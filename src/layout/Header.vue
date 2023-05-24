@@ -2,8 +2,8 @@
   <div id="header">
     <!-- 标题logo -->
     <div class="title">
-      <!-- <div class="icon"><span class="iconfont icon-yinleyanzou"></span></div>
-      <div class="text"><span>BlueMusic</span></div> -->
+      <div class="icon"><span class="iconfont icon-yinleyanzou"></span></div>
+      <div class="text"><span>酷牛音乐网站</span></div>
     </div>
 
     <!-- 搜索框 -->
@@ -78,7 +78,6 @@ export default {
   background: pink;
   z-index: 99;
   .title {
-    flex: 2;
     display: flex;
     align-items: center;
     height: 60px;
